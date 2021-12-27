@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Smart Home</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="logogold.png" alt="smart home logo" class="logo">
+        <ul class="nav-links">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="ctn"><a href="login.html">Login</a></li>
+        </ul>
+        <img src="entypo_menu.svg" alt="hamburger menu"
+        class="menu-btn">
+    </nav>
+
+    <header>
+        <div class="header-content" id="home">
+            <h2>How did you ever live without it?</h2>
+            <div class="line"></div>
+            <h1>Your Home At Your Fingertips</h1>
+            <a href="signup.html" class="ctn" >Sign Up</a>
+        </div>
+    </header>
+
+    <section class="services" id="services">
+        <div class="title">
+            <h1>Services</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="whitekitchen.jpg" alt="modern kitchen" class="kitchen" >
+                <h4>Kitchen</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente earum sint ratione in, accusamus et voluptatem magni, molestias dolorem optio debitis quos. Amet tempora deserunt, repellat suscipit expedita cupiditate placeat!</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="washer.jpg" alt="washer" class="laundry" >
+                <h4>Laundry</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente earum sint ratione in, accusamus et voluptatem magni, molestias dolorem optio debitis quos. Amet tempora deserunt, repellat suscipit expedita cupiditate placeat!</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h1>About</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto soluta amet doloremque doloribus facere tenetur, cupiditate hic expedita ea! Dignissimos atque eaque odio pariatur, distinctio labore alias repudiandae ipsa laudantiu Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptates at. Deleniti quasi facere error soluta dignissimos, ab delectus deserunt quo ut impedit labore molestias aliquid. Non voluptatum esse nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cum explicabo qui totam eaque nulla quibusdam similique reprehenderit laborum, soluta, at amet ad tenetur sint a non id porro inventore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis dolores, pariatur autem dolorum, eaque quae voluptate ab dignissimos enim numquam similique doloremque, at sint voluptas sequi facilis! Quae, minus sed? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum voluptate blanditiis odio fugit expedita adipisci nihil sint veniam iste minus quibusdam facilis corrupti harum, rerum eligendi odit ullam nobis!</p>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>1234 Fifth Avenue, Los Angeles CA 90210, USA | Phone: 800-123-4567 | Email: conatact@</p>
+        <p>Copyright 2021 Smart Home</p>
+    </section>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+</body>
+</html>

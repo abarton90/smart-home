@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <img src="logogold.png" alt="smart home logo" class="logo">
+            <ul class="nav-links">
+                <li class="active"><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li class="ctn"><a href="login.html">Login</a></li>
+            </ul>
+            <img src="entypo_menu.svg" alt="hamburger menu"
+            class="menu-btn">
+        </nav>
+
+        <header>
+            <div class="signup-box">
+                <h1>Sign Up</h1>
+                <h4>Sign up for free. It's quick and easy.</h4>
+                <form action="">
+                    <label for="">First Name</label>
+                    <input type="text" placeholder="">
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="">
+                    <label for="">Confrim Password</label>
+                    <input type="password" placeholder="">
+                    <input type="button" value="Submit">
+                </form>
+                <p>By clicking the Sign Up button, you agree to our <br><a href="#">Terms and Condition</a> and <a href="#">Policy And Privacy</a></p>
+                <p class="signin-login">Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </header>
+
+        <section class="footer">
+            <p>1234 Fifth Avenue, Los Angeles CA 90210, USA | Phone: 800-123-4567 | Email: conatact@</p>
+            <p>Copyright 2021 Smart Home</p>
+        </section>
+    
+    
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+    
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+
+
+        
+        
+    </body>
+</html>                                             
